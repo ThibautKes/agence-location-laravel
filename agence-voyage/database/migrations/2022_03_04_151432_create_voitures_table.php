@@ -15,6 +15,16 @@ return new class extends Migration
     {
         Schema::create('voitures', function (Blueprint $table) {
             $table->id();
+            $table->string("url");
+            $table->string('immatriculation');
+            $table->string("marque");
+            $table->string("modele");
+            $table->string("annee");
+            $table->string("chevaux");
+            $table->string("couleur");
+            $table->string("prix/100Km");  
+            $table->string("title");
+            $table->integer("user_id");
             $table->timestamps();
         });
     }
