@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('aeroports', function (Blueprint $table) {
             $table->id();
+            $table->string("nom");
+            $table->string("ville");
             $table->timestamps();
         });
     }
