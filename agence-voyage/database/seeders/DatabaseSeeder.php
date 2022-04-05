@@ -30,23 +30,49 @@ class DatabaseSeeder extends Seeder
 
         DB::table('voitures')->insert([
             'url' => "/images/voitures/". rand(1, 4). ".jpg",
-            'title' => "Voiture Aléatoire 1",
-            'user_id' => 1,
+            'immatriculation' => "DM-980-BA",
+            'marque' => "Peugeot",
+            'modele' => "3008",
+            'chevaux' => "110",
+            'couleur' => "noire",
+            'prix/100km' => "15",
+            'annee' => "2015",
+            'isReserved' => false,
         ]);
         DB::table('voitures')->insert([
             'url' => "/images/voitures/". rand(1, 4). ".jpg",
-            'title' => "Voiture Aléatoire 1",
-            'user_id' => 2,
+            'immatriculation' => "AK-077-RZ",
+            'marque' => "Opel",
+            'modele' => "Corsa",
+            'chevaux' => "125",
+            'couleur' => "rouge",
+            'prix/100km' => "12",
+            'annee' => "2009",
+            'isReserved' => false,
         ]);
         DB::table('voitures')->insert([
             'url' => "/images/voitures/". rand(1, 4). ".jpg",
-            'title' => "Voiture Aléatoire 3",
-            'user_id' => 1,
+            'immatriculation' => "DZ-652-TH",
+            'marque' => "Seat",
+            'modele' => "Ibiza",
+            'chevaux' => "90",
+            'couleur' => "bleue",
+            'prix/100km' => "20",
+            'annee' => "2018",
+            'isReserved' => false,
         ]);
         DB::table('voitures')->insert([
             'url' => "/images/voitures/". rand(1, 4). ".jpg",
-            'title' => "Voiture Aléatoire 4",
-            'user_id' => 2,
+            'immatriculation' => "JZ-870-TY",
+            'marque' => "Audi",
+            'modele' => "A3",
+            'chevaux' => "130",
+            'couleur' => "grise",
+            'prix/100km' => "26",
+            'annee' => "2020",
+            'isReserved' => false,
+            'dateReserv' => '2022-04-14',
+            'dateRetour' => '2022-04-18',
         ]);
     }
 }
