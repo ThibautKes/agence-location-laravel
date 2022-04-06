@@ -70,9 +70,49 @@ class DatabaseSeeder extends Seeder
             'couleur' => "grise",
             'prix/100km' => "26",
             'annee' => "2020",
-            'isReserved' => false,
+            'isReserved' => true,
             'dateReserv' => '2022-04-14',
             'dateRetour' => '2022-04-18',
+        ]);
+
+        DB::table('aeroports')->insert([
+            'nom' => "Paris Charles de Gaulle",
+            'ville' => "Paris",
+        ]);
+
+        DB::table('aeroports')->insert([
+            'nom' => "Paris Orly",
+            'ville' => "Paris",
+        ]);
+
+        DB::table('aeroports')->insert([
+            'nom' => "Nice",
+            'ville' => "Nice",
+        ]);
+
+        DB::table('aeroports')->insert([
+            'nom' => "Lyon saint exupéry",
+            'ville' => "Lyon",
+        ]);
+
+        DB::table('aeroports')->insert([
+            'nom' => "Marseille",
+            'ville' => "Marseille",
+        ]);
+
+        DB::table('aeroports')->insert([
+            'nom' => "Toulouse blagnac",
+            'ville' => "Toulouse",
+        ]);
+
+        DB::table('aeroports')->insert([
+            'nom' => "Figari sud Corse",
+            'ville' => "porto Vecchio",
+        ]);
+
+        DB::table('aeroports')->insert([
+            'nom' => "Clermont ferrand",
+            'ville' => "Clermont ferrand",
         ]);
     }
 }
