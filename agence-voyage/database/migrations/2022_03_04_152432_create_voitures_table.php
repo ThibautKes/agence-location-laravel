@@ -26,7 +26,9 @@ return new class extends Migration
             $table->boolean("isReserved");
             $table->date("dateReserv")->nullable();
             $table->date("dateRetour")->nullable();
-            $table->timestamps();
+            $table->unsignedBigInteger("idAeroport");
+
+            $table->foreign("idAeroport")->references("id")->on("aeroports")->onDelete("restrict");
         });
     }
 

@@ -14,17 +14,15 @@ return new class extends Migration
     public function up()
     {
         Schema::create('voiturereservees', function (Blueprint $table) {
-            $table->increments("id");
-            $table->unsignedInteger("idclient");
+            $table->id();
+            $table->unsignedBigInteger("idClient");
+            $table->unsignedBigInteger("idVoiture");
             $table->string("immatriculation");
             $table->date("dateReserv");
             $table->date("dateRetour");
-            
-            $table->foreign("idclient")->references("id")->on("users")->onDelete("restrict");
-           // $table->foreign('immatriculation')->references('immatriculation')->on('voitures')->onDelete('cascade');
-           // $table->foreign('dateReserv')->references('dateReserv')->on('voitures')->onDelete('cascade');
-            //$table->foreign('dateRetour')->references('dateRetour')->on('voitures')->onDelete('cascade');
-            $table->timestamps();
+
+            $table->foreign("idClient")->references('id')->on("users")->onDelete("restrict");
+            $table->foreign("idVoiture")->references("id")->on("voitures")->onDelete("restrict");
         });
     }
 

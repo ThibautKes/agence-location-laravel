@@ -15,4 +15,8 @@ class Aeroport extends Model
         'nom',
         'ville',
     ];
+
+    public function cars(){
+        return $this->hasMany(Voiture::class,'idAeroport');
+    }
 }

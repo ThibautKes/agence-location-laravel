@@ -17,10 +17,12 @@ Route::get('/', function (){
     return redirect('/login');
 });
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\AeroportController::class, 'index'])->name('home');
 
-Auth::routes();
+Route::get('/cars', [App\Http\Controllers\VoitureController::class, 'index'])->name('voiture');
+
 
 
