@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Aeroport;
 
 class AeroportController extends Controller
 {
@@ -13,7 +14,8 @@ class AeroportController extends Controller
      */
     public function index()
     {
-        
+
+        return view("home/index",["aeroports"=>Aeroport::all()]);
     }
 
     /**
@@ -26,7 +28,7 @@ class AeroportController extends Controller
         //
     }
 
-    
+
     /**
      * Store a newly created resource in storage.
      *

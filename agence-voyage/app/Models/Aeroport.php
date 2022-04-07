@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Aeroport extends Model
 {
     use HasFactory;
+
+    public $timestamp=false;
+
+    public $fillable=[
+        'nom',
+        'ville',
+    ];
 }

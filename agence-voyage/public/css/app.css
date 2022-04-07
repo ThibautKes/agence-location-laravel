@@ -11286,3 +11286,80 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+
+/*customize css */
+
+.head-title{
+    font-size: 56px;
+    color : orangered;
+    margin-left: 100px;
+    margin-right : 100px;
+    padding-top: 5%;
+
+}
+
+
+.carform {
+    display : flex;
+    gap : 100px;
+    flex-direction : column;
+    justify-content: top;
+    align-items: center;
+    background-image : url(../voitures/background.jpg);
+    height : 100vh;
+    background-position: center;
+}
+
+.carform > form {
+    width : 50vw;
+    background-color: white;
+    padding : 32px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sub-title, .sub-title2{
+    font-size : 24px;
+}
+
+.sub-title2{
+    margin-top: 5%;
+}
+
+label{
+    margin-left: 5%;
+}
+
+select[name="aeroport"]{
+    width : 100%;
+}
+
+.flex-line{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+input[name="search"]{
+    margin-top: 5%;
+    float:right;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border : 3px solid transparent;
+    transition : all 0.2s;
+}
+
+input[name="search"]:hover{
+    background-color: white;
+    color: orange;
+    border : 3px solid orange;
+}
+
+
+
