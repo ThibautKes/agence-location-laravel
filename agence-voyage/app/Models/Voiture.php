@@ -30,5 +30,9 @@ class Voiture extends Model
         return $this->belongsTo(Aeroport::class,'idAeroport');
     }
 
+    public function reservation(){
+        return $this->hasMany(VoitureReservee::class,'idVoiture');
+    }
+
 
 }

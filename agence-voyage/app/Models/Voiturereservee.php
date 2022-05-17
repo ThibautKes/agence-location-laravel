@@ -18,4 +18,8 @@ class Voiturereservee extends Model
         'dateReserv',
         'dateRetour'
     ];
+
+    public function voiture(){
+        return $this->belongTo(Voiture::class,'id','idVoiture');
+    }
 }

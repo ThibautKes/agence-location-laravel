@@ -15,7 +15,7 @@ class AeroportController extends Controller
     public function index()
     {
 
-        return view("home/index",["aeroports"=>Aeroport::all()]);
+        return view("home/index",["aeroports"=>Aeroport::all(),"message"=>""]);
     }
 
     /**

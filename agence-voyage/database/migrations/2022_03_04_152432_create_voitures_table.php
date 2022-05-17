@@ -23,9 +23,6 @@ return new class extends Migration
             $table->string("chevaux");
             $table->string("couleur");
             $table->string("prix/100Km");
-            $table->boolean("isReserved");
-            $table->date("dateReserv")->nullable();
-            $table->date("dateRetour")->nullable();
             $table->unsignedBigInteger("idAeroport");
 
             $table->foreign("idAeroport")->references("id")->on("aeroports")->onDelete("restrict");

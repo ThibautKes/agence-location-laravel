@@ -83,7 +83,6 @@ class DatabaseSeeder extends Seeder
             'couleur' => "noire",
             'prix/100km' => "15",
             'annee' => "2015",
-            'isReserved' => false,
             'idAeroport' => 1,
         ]);
         DB::table('voitures')->insert([
@@ -95,7 +94,6 @@ class DatabaseSeeder extends Seeder
             'couleur' => "rouge",
             'prix/100km' => "12",
             'annee' => "2009",
-            'isReserved' => false,
             'idAeroport' => 1,
         ]);
         DB::table('voitures')->insert([
@@ -107,7 +105,6 @@ class DatabaseSeeder extends Seeder
             'couleur' => "bleue",
             'prix/100km' => "20",
             'annee' => "2018",
-            'isReserved' => false,
             'idAeroport' => 1,
         ]);
         DB::table('voitures')->insert([
@@ -119,9 +116,6 @@ class DatabaseSeeder extends Seeder
             'couleur' => "grise",
             'prix/100km' => "26",
             'annee' => "2020",
-            'isReserved' => true,
-            'dateReserv' => '2022-04-14',
-            'dateRetour' => '2022-04-18',
             'idAeroport' => 1,
         ]);
 

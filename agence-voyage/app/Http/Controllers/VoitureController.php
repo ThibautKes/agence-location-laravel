@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Aeroport;
 use App\Models\Voiture;
 use App\Models\Voiturereservee;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\Eloquent\Builder;
 
 class VoitureController extends Controller
 {
@@ -16,17 +18,22 @@ class VoitureController extends Controller
      */
     public function index(Request $request)
     {
-        $aeroport1 = $request->aeroport1;
+
         $date1 = $request->date1;
         $date2 = $request->date2;
 
+        if($date1>$date2 || $date1 === null || $date2 === null)return view('home/index',["aeroports"=>Aeroport::all(), "message"=>"La date de retour ne peut pas être inférieure à la date de début et les dates ne peuvent pas être nulles"]);
+        //Raw('? < dateReserv OR ? > dateRetour', [$date2, $date1])
+
         $client_id = Auth::id();
 
-        $voitures = Voiture::where('idAeroport', '=', $aeroport1)
-        ->whereRaw('isReserved = 0 OR (isReserved = 1 AND (? < dateReserv OR ? > dateRetour))', [$date2, $date1])
-        ->get();
+        $voitures = Voiture::whereDoesntHave('reservation')->orWhereHas('reservation', function ($q) use ($date1, $date2) {
+            $q->where('dateReserv', '>', $date2)->orWhere('dateRetour', '<', $date1);
+        })->get()->where('idAeroport', '=', $request->aeroport1);
+
+
         return view("voiture/index", [
-            "voitures" =>$voitures,
+            "voitures" => $voitures,
             "client_id" => $client_id,
             "date1" => $date1,
             "date2" => $date2
