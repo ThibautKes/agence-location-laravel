@@ -24,5 +24,10 @@ Route::get('/home', [App\Http\Controllers\AeroportController::class, 'index'])->
 
 Route::get('/cars', [App\Http\Controllers\VoitureController::class, 'index'])->name('voiture');
 
+Route::get('/reservations', [App\Http\Controllers\ReservationController::class, 'index'])->name('reservation');
+
+Route::post('/addReserve', [App\Http\Controllers\VoitureController::class, 'store']);
+
+Route::post('/deleteReservation', [App\Http\Controllers\ReservationController::class, 'delete']);
 
 

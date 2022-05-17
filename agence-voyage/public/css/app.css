@@ -4031,6 +4031,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  background-color: transparent;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4051,6 +4052,7 @@ textarea.form-control-lg {
   font-size: 1.125rem;
   text-decoration: none;
   white-space: nowrap;
+  color: orangered;
 }
 .navbar-nav {
   display: flex;
@@ -4434,7 +4436,7 @@ textarea.form-control-lg {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: orangered;
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
   color: rgba(0, 0, 0, 0.9);
@@ -11361,5 +11363,43 @@ input[name="search"]:hover{
     border : 3px solid orange;
 }
 
+.reserve{
+    padding : 10px 30px;
+    border-radius : 10px;
+    background-color : orangered;
+    color: white;
+    border : none;
+    box-shadow: 2px 2px 5px 2px #000000;
 
+}
+
+.container-cars{
+    width : 70vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.car{
+    display : flex;
+    justify-content: space-between;
+}
+
+.car-infos{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.car-img{
+    width: 40vw;
+}
+
+.bouton-reserve{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 40px;
+
+}
 

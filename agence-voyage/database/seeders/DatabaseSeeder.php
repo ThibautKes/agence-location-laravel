@@ -28,6 +28,12 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('password'),
         ]);
 
+        DB::table('users')->insert([
+            'name' => "thibaut",
+            'email' => 'thibaut@gmail.com',
+            'password' => Hash::make('thibaut'),
+        ]);
+
         DB::table('aeroports')->insert([
             'nom' => "Paris Charles de Gaulle",
             'ville' => "Paris",
@@ -117,6 +123,14 @@ class DatabaseSeeder extends Seeder
             'dateReserv' => '2022-04-14',
             'dateRetour' => '2022-04-18',
             'idAeroport' => 1,
+        ]);
+
+        DB::table('voiturereservees')->insert([
+            'idClient' => "3",
+            'idVoiture' => "4",
+            'immatriculation' => "JZ-870-TY",
+            'dateReserv' => '2022-04-14',
+            'dateRetour' => '2022-04-18',
         ]);
 
 

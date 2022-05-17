@@ -15,7 +15,7 @@
                     @endforeach
                 </select>
             </div>
-            <label for="date1">Date retour
+            <label for="date1">Date départ
                 <input type="date" name="date1">
             </label>
         </div>
