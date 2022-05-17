@@ -81,7 +81,7 @@ class DatabaseSeeder extends Seeder
             'modele' => "3008",
             'chevaux' => "110",
             'couleur' => "noire",
-            'prix/100km' => "15",
+            'prix' => "15",
             'annee' => "2015",
             'idAeroport' => 1,
         ]);
@@ -92,7 +92,7 @@ class DatabaseSeeder extends Seeder
             'modele' => "Corsa",
             'chevaux' => "125",
             'couleur' => "rouge",
-            'prix/100km' => "12",
+            'prix' => "12",
             'annee' => "2009",
             'idAeroport' => 1,
         ]);
@@ -103,7 +103,7 @@ class DatabaseSeeder extends Seeder
             'modele' => "Ibiza",
             'chevaux' => "90",
             'couleur' => "bleue",
-            'prix/100km' => "20",
+            'prix' => "20",
             'annee' => "2018",
             'idAeroport' => 1,
         ]);
@@ -114,7 +114,7 @@ class DatabaseSeeder extends Seeder
             'modele' => "A3",
             'chevaux' => "130",
             'couleur' => "grise",
-            'prix/100km' => "26",
+            'prix' => "26",
             'annee' => "2020",
             'idAeroport' => 1,
         ]);
@@ -126,7 +126,5 @@ class DatabaseSeeder extends Seeder
             'dateReserv' => '2022-04-14',
             'dateRetour' => '2022-04-18',
         ]);
-
-
     }
 }

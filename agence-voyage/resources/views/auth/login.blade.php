@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="full-bg">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header">{{ __('Se connecter') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -45,7 +46,7 @@
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
+                                        {{ __('Se souvenir de mes identifiants') }}
                                     </label>
                                 </div>
                             </div>
@@ -59,7 +60,7 @@
 
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        {{ __('Mot de passe oublié ?') }}
                                     </a>
                                 @endif
                             </div>
@@ -70,4 +71,5 @@
         </div>
     </div>
 </div>
+    </div>
 @endsection

@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string("annee");
             $table->string("chevaux");
             $table->string("couleur");
-            $table->string("prix/100Km");
+            $table->string("prix");
             $table->unsignedBigInteger("idAeroport");
 
             $table->foreign("idAeroport")->references("id")->on("aeroports")->onDelete("restrict");

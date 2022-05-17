@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+<style>
+    option:hover {
+        background-color: yellow;
+    }
+</style>
+
 @section('content')
 
 
@@ -25,7 +31,7 @@
                 <div>
                     <select name="aeroport2" id="aeroport2">
                         @foreach($aeroports as $aeroport)
-                            <option value={{$aeroport->id}}>{{$aeroport->nom}} - {{$aeroport->ville}}</option>
+                            <option value={{$aeroport->id}} >{{$aeroport->nom}} - {{$aeroport->ville}}</option>
                         @endforeach
                     </select>
                 </div>

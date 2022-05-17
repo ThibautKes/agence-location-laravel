@@ -2189,7 +2189,7 @@ progress {
   font-weight: 400;
   line-height: 1.6;
   color: #212529;
-  background-color: #f8fafc;
+  background-color: white;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   -webkit-appearance: none;
@@ -2210,11 +2210,10 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: #212529;
-  background-color: #f8fafc;
-  border-color: #86b7fe;
+  color: white;
+  background-color: orangered;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(255,69,0, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.6em;
@@ -2496,13 +2495,13 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus {
-  border-color: #86b7fe;
+  border-color: orangered;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(255,69,0, 0.25);
 }
 .form-check-input:checked {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: orangered;
+  border-color: orangered;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
@@ -2511,8 +2510,8 @@ textarea.form-control-lg {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: orangered;
+  border-color: orangered;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -3025,28 +3024,27 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  color: white;
+  background-color: orangered;
 }
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  color: orangered;
+  background-color: white;
+    border-color: orangered;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  background-color: orangered;
+  border-color: orangered;
+  box-shadow: 0 0 0 0.25rem rgba(255, 69, 0, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #0a58ca;
-  border-color: #0a53be;
+  background-color: orangered;
+  border-color: orangered;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(255, 69, 0, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
@@ -3466,14 +3464,14 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #0d6efd;
+  color: orangered;
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #0a58ca;
+  color: black;
 }
 .btn-link:disabled, .btn-link.disabled {
-  color: #6c757d;
+  color: grey;
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -3769,13 +3767,13 @@ textarea.form-control-lg {
   border: 0;
 }
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #1e2125;
-  background-color: #e9ecef;
+  color: white;
+  background-color: orangered;
 }
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #0d6efd;
+  background-color: orangered;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
@@ -3938,7 +3936,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: black;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4031,7 +4029,6 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: transparent;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4442,7 +4439,7 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  color: black;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: rgba(0, 0, 0, 0.7);
@@ -4511,7 +4508,7 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: white;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -4564,8 +4561,9 @@ textarea.form-control-lg {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: orangered;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    color: white;
 }
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
@@ -11306,11 +11304,20 @@ textarea.form-control-lg {
     display : flex;
     gap : 100px;
     flex-direction : column;
-    justify-content: top;
+    justify-content: flex-start;
     align-items: center;
     background-image : url(../voitures/background.jpg);
     height : 100vh;
     background-position: center;
+}
+
+.full-bg{
+    background-image : url(../voitures/background.jpg);
+    height : 100vh;
+    background-position: center;
+    display : flex;
+    justify-content: flex-start;
+    padding-top: 200px;
 }
 
 .carform > form {
@@ -11350,7 +11357,7 @@ input[name="search"]{
     margin-top: 5%;
     float:right;
     border-radius: 10px;
-    background-color: orange;
+    background-color: orangered;
     color: white;
     padding: 10px 20px;
     border : 3px solid transparent;
@@ -11359,11 +11366,11 @@ input[name="search"]{
 
 input[name="search"]:hover{
     background-color: white;
-    color: orange;
-    border : 3px solid orange;
+    color: orangered;
+    border : 3px solid orangered;
 }
 
-.reserve{
+.bouton-reserve > input, .comeback {
     padding : 10px 30px;
     border-radius : 10px;
     background-color : orangered;
@@ -11373,11 +11380,31 @@ input[name="search"]:hover{
 
 }
 
+.comeback{
+    display : block;
+    margin-right : auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.comeback > a{
+    text-decoration: none;
+    color: white;
+}
+
 .container-cars{
     width : 70vw;
     margin-right: auto;
     margin-left: auto;
     display: block;
+    margin-top: 50px;
+    margin-bottom : 50px;
+}
+
+.container-cars > div{
+    padding-bottom : 30px;
+    padding-top : 30px;
+    border-bottom : 2px solid orangered;
 }
 
 .car{
@@ -11387,19 +11414,39 @@ input[name="search"]:hover{
 
 .car-infos{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction : column;
 }
 
+.car-infos > p, .car-infos > h3{
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.car-infos > h3{
+    font-size: 30px;
+}
+
+.car-img-container{
+    overflow: hidden;
+    border-radius: 10px;
+
+}
 .car-img{
-    width: 40vw;
+    width: 20vw;
+    max-width : 600px;
+    min-width : 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.car-img:hover{
+    transform: scale(1.2);
 }
 
 .bouton-reserve{
     display : flex;
+    height : 100%;
     align-items: center;
-    justify-content: center;
-    max-height: 40px;
 
 }
-
