@@ -21,7 +21,7 @@
 
                     <p><span style="color:red">Modèle : </span>{{$voiture->marque}} {{$voiture->modele}}</p>
                 <p><span style="color:red">Immatriculation : </span>{{$voiture->immatriculation}}</p>
-                    <p><span style="color:red">Aéroport de départ : </span>{{$voiture->idAeroport}}</p>
+                    <p><span style="color:red">Aéroport de départ : </span>{{$voiture->aeroport->nom}}</p>
                 <p><span style="color:red">Date de réservation : </span>{{$reservation->dateReserv}}</p>
                 <p><span style="color:red">Date de retour : </span>{{$reservation->dateRetour}}</p>
                     <p><span style="color:red">Prix au 100km : </span>{{$voiture->prix}} €</p>

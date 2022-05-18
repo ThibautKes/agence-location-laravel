@@ -19,7 +19,7 @@
         <h3>Coût au /100km : <span style="color:red">{{$v->prix}} €.</span></h3>
     </div>
 
-    <div class=reserve">
+    <div class="reserve">
     <form class="bouton-reserve" method="POST" action="/addReserve">
         @csrf
         <input type="text" name="client_id" value="{{$client_id}}" style="display: none">
