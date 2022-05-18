@@ -11430,6 +11430,8 @@ input[name="search"]:hover{
 .car-img-container{
     overflow: hidden;
     border-radius: 10px;
+    display : flex;
+    align-items: center;
 
 }
 .car-img{
