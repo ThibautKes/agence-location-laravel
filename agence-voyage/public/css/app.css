@@ -11331,6 +11331,7 @@ textarea.form-control-lg {
 
 .sub-title, .sub-title2{
     font-size : 24px;
+    text-align: center;
 }
 
 .sub-title2{
@@ -11451,4 +11452,16 @@ input[name="search"]:hover{
     height : 100%;
     align-items: center;
 
+}
+
+.inputhome{
+    padding: 5px 15px;
+    border : 1px solid orangered;
+    border-radius : 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px 0.25rem rgba(255,69,0, 0.10);
+}
+
+.inputhome:focus, .inputhome:checked, .inputhome:active{
+    border-color: orangered;
 }
